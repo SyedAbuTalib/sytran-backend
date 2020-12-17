@@ -10,7 +10,10 @@ class ItemsController < ApplicationController
 
   # GET /items/1
   def show
-    render json: @item
+    # @item.file.download
+    # send_data @item.file.read, filename: @item.name
+    redirect_to rails_blob_path(@item.file, disposition: "attachment")
+    # render json: @item
   end
 
   # POST /items
@@ -46,6 +49,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.fetch(:item, {})
+      params.require(:item).permit(:name, :file)
     end
 end
