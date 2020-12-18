@@ -1,24 +1,34 @@
-# README
+# Sytran Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+The backend server for the Sytran npm module. Made with Ruby on Rails.
 
-* Ruby version
+## How to Run
 
-* System dependencies
+Install dependencies:
 
-* Configuration
+`bundle install`
 
-* Database creation
+Set up databases:
 
-* Database initialization
+`rails db:migrate`
 
-* How to run the test suite
+Start server:
 
-* Services (job queues, cache servers, search engines, etc.)
+`rails s`
 
-* Deployment instructions
+## Important information
 
-* ...
+Ruby version: 2.7.1
+
+System dependencies: Have Ruby installed
+
+Database: Postgres
+
+
+## Notes
+
+Currently being run on Heroku at https://sytran-backend.herokuapp.com (api only, there is no front end).
+
+Files saved on this server are PUBLIC. Please do not send sensitive data to the server.
