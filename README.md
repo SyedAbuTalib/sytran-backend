@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The backend server for the Sytran npm module. Made with Ruby on Rails.
+The backend server for the [Sytran npm module](https://github.com/SyedAbuTalib/sytran). Made with Ruby on Rails.
 
 ## How to Run
 
@@ -29,6 +29,6 @@ Database: Postgres
 
 ## Notes
 
-Currently being run on Heroku at https://sytran-backend.herokuapp.com (api only, there is no front end).
+Currently being run on Heroku at https://sytran-backend.herokuapp.com (this is api only, there is no front end).
 
 Files saved on this server are PUBLIC. Please do not send sensitive data to the server.
